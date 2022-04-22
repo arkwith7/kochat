@@ -82,7 +82,7 @@ function setUserName(username) {
 
 function requestChat(messageText, url_pattern) {
     $.ajax({
-        url: "http://0.0.0.0:8080/" + url_pattern + '/' + userName + '/' + messageText,
+        url: "http://127.0.0.1:8080/" + url_pattern + '/' + userName + '/' + messageText,
         type: "GET",
         dataType: "json",
         success: function (data) {

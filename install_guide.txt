@@ -1,0 +1,18 @@
+1. PyTorch설치
+
+pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cpu
+
+2. kochat 필요 패키지 설치
+- pip install kochat
+- pip install kocrawl
+- 파이썬3.9에서 버젼 충돌로 잘 설치 안되니 패키지에 버젼 정보지우고 설치 필요
+
+3. Konlpy 테스트후 조치
+ - AttributeError: module 'tweepy' has no attribute 'StreamListener' 오류 발생시 다운그레이드
+   pip install tweepy==3.10.0
+ 
+ - 개발서버에 mecab이 설치되어 있는경우, 그렇지 않으면 한국어 메캅 다운후 컴파일 설치
+   pip install mecab-python
+
+4. "demo/application.py"에 sys임포트하고 패키지 경로 설정, 아이피 0.0.0.0을 127.0.0.1로 수정
+5. "demo/static/js/main.js"에 아이피 0.0.0.0을 127.0.0.1로 수정

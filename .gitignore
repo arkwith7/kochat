@@ -125,3 +125,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# 모델 파일
+demo/saved/
